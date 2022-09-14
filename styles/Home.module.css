@@ -1,0 +1,30 @@
+.grid{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: auto;
+  background-color: black;
+  color:#fff;
+  margin: 0 auto;
+  justify-content: center;
+}
+.card{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card_image{
+  position: relative;
+  width: 200px;
+  height: 150px;
+  border: 1px solid #111;
+  object-fit: cover;
+}
+
+.title{
+  margin-top: 10px;
+
+
+}
