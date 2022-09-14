@@ -1,0 +1,2 @@
+# nextjs--Pokemon-list
+NextJS
