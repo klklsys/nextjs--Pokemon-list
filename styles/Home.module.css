@@ -1,21 +1,21 @@
-.grid{
+.grid {
+  padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   background-color: black;
-  color:#fff;
+  color: #fff;
   margin: 0 auto;
   justify-content: center;
 }
-.card{
+.card {
   width: 200px;
   height: 200px;
   display: flex;
   flex-direction: column;
-
 }
 
-.card_image{
+.card_image {
   position: relative;
   width: 200px;
   height: 150px;
@@ -23,8 +23,6 @@
   object-fit: cover;
 }
 
-.title{
+.title {
   margin-top: 10px;
-
-
 }
