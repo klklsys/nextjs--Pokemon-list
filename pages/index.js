@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Link from 'next/link'
@@ -63,6 +64,26 @@ export default function Home () {
     getPokemon();
   },[])
   return(
+=======
+import React, { useState, useEffect } from "react";
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+
+export async function getStaticProps() {
+  const resp = await fetch(
+    "https://jherr-pokemon.s3.us-west-1.amazonaws.com/index.json"
+  );
+  return {
+    props: {
+      pokemon: await resp.json(),
+    },
+  };
+}
+export default function Home({ pokemon }) {
+  return (
+>>>>>>> Stashed changes
     <>
     <Head>Pokemon Grid</Head>
     <div className={styles.grid}>
